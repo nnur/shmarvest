@@ -1,0 +1,46 @@
+<link rel='stylesheet' href='css/application.css' >
+<div class="welcome-hero">
+    <%- img_tag('./images/welcome-hero.png', {class:'welcome-hero__img'}) %>
+    <h2 class="welcome-hero__caption">
+        Welcome to Shmarvest, <%= name %>
+        <h5 class="welcome-hero__caption--light">
+            Here’s how to get started:
+        </h5>
+    </h2>
+</div>
+
+<div class="welcome-todos">
+    <a class="welcome-todos__item">
+        <i class="welcome-todos__check"></i>
+        <div class="welcome-todos__info">
+            <h2>Create your first project</h2>
+            <p>Projects get you valuable analysis about your tracked time.</p>
+        </div>
+    </a>
+    <a class="welcome-todos__item">
+        <i class="welcome-todos__check"></i>
+        <div class="welcome-todos__info">
+            <h2>Invite co-workers</h2>
+            <p>Harvest is great for teams</p>
+        </div>
+    </a>
+</div>
+
+<div class="welcome-footer">
+    <a class="welcome-footer__link">
+        <h3>Webinars</h3>
+        <p>Live online classes. Pick the brains of our experts.</p>
+    </a>
+    <a class="welcome-footer__link">
+        <h3>Help Center</h3>
+        <p>Our knowledge base and FAQs.</p>
+    </a>
+    <a class="welcome-footer__link">
+        <h3>Support</h3>
+        <p>Friendly experts, always ready to help.</p>
+    </a>
+</div>
+
+<hr class="welcome-footer__divide"/>
+
+<a class="welcome-footer__remove-page">Don’t show me this welcome page again</a>

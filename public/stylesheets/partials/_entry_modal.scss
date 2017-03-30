@@ -1,0 +1,163 @@
+.entry-modal__overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: rgba(0,0,0,0.6);
+    z-index: 3;
+}
+
+.entry-modal__overlay--hidden {
+    visibility: hidden;
+}
+
+.entry-card {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    margin-left: calc(-510px/2);
+    background: white;
+    width: 510px;
+    z-index: 3;
+    border-radius: 6px;
+}
+
+.entry-card__header {
+    @include linear-gradient(#fafafa, #eaeaea);
+    height: 36px;
+    border-bottom: 1px solid #bbb;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entry-card__header-strut {
+    flex: 1;
+}
+
+.entry-card__header-title {
+    color: #555;
+    font-size: 15px;
+    font-family: "TradeGothic-Medium";
+    text-align: center;
+    line-height: 35px;
+    flex: 1;
+}
+
+.entry-card__header-details {
+    color: #777;
+    font-size: 13px;
+    text-shadow: 0 1px 0 #fff;
+    line-height: 35px;
+    flex: 1;
+    text-align: right;
+    padding-right: 25px;
+}
+
+.chosen-select-wrapper {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+.chosen-select {
+    width: 100%;
+}
+
+.chosen-container-single .chosen-single {
+    font-size: 15px;
+    height: 31px;
+    line-height: 29px;
+}
+
+.entry-card__form {
+    width: 90%;
+    margin: 25px auto;
+}
+
+.entry-card__input-label {
+    display: block;
+    font-family: "TradeGothic-Medium";
+    font-weight: 100;
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.entry-card__input-group {
+    display: flex;
+    margin: 10px 0;
+    input, textarea {
+        background: #fff;
+        border: 1px solid #bbb;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+        color: #555;
+        box-sizing: border-box;
+        height: 56px;
+    }
+}
+
+.entry-card__notes {
+    overflow: hidden;
+    word-wrap: break-word;
+    resize: none;
+    line-height: 1.2;
+    padding: 7px 10px;
+    font-size: 15px;
+    flex: 3;
+    margin-right: 10px;
+}
+
+.entry-card__duration {
+    overflow: hidden;
+    word-wrap: break-word;
+    resize: none;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 10px;
+    flex: 1;
+    max-height: 56px;
+}
+
+.entry-card__actions {
+    margin-top: 20px;
+}
+
+.entry-card__save-button {
+    background-color: #2e8d11;
+    background-image: linear-gradient(#72c152, #2e8d11);
+    border: 1px solid #237c07;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+    margin-right: 5px;
+    padding: 0 13px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.entry-card__save-button:hover {
+    background-color: #28880a;
+    background-image: linear-gradient(#66b746, #28880a);
+}
+
+.entry-card__cancel-button {
+    background-color: #e4e4e4;
+    background-image: linear-gradient(#f8f8f8, #e4e4e4);
+    border: 1px solid #bbb;
+    color: #888;
+    font-weight: bold;
+    padding: 0 13px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.entry-card__cancel-button:hover {
+    background-color: #ddd;
+    background-image: linear-gradient(#f4f4f4, #ddd);
+}

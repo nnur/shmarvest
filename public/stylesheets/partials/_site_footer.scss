@@ -1,0 +1,43 @@
+.site-footer {
+    background: #f8f8f8;
+    background-color: rgb(248, 248, 248);
+    border-top: 1px solid #dadada;
+    box-sizing: content-box;
+    clear: both;
+    color: #888;
+    font-size: 13px;
+    height: 31px;
+    line-height: 31px;
+    padding: 30px 0;
+}
+
+.site-footer__content {
+    width: 1020px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer__more-projects {
+    b { font-weight: 800;}
+    a {
+        text-decoration: underline;
+    }
+}
+
+.site-footer__links {
+    display: flex;
+    justify-content: space-between;
+    a {
+        padding: 0 10px;
+        color: #ccc;
+        cursor: pointer;
+        &:hover {color: #999;}
+    }
+}
+
+.site-footer__logo {
+    font-family: "TradeGothic-Medium";
+    font-weight: 400;
+    font-size: 22px;
+}

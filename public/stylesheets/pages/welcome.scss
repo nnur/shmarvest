@@ -1,0 +1,141 @@
+.welcome-page {
+    .site_header {
+        height: 48px;
+    }
+}
+
+.welcome-hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.welcome-hero__img {
+    align-self: center;
+    height: 260px;
+    margin-bottom: 20px;
+}
+
+.welcome-hero__caption {
+    font-family: "TradeGothic-Regular";
+    align-self: center;
+    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    text-align: center;
+}
+
+.welcome-hero__caption--light {
+    @extend .welcome-hero__caption;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #777;
+    padding-top: 10px;
+}
+
+.welcome-todos {
+    width: 600px;
+    margin: auto;
+}
+
+.welcome-todos__item {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: inherit;
+    display: block;
+    margin: 15px 0;
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+}
+
+.welcome-todos__item:hover {
+    background: #f2f2f2;
+    border-color: #bbb;
+}
+
+.welcome-todos__item h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.welcome-todos__item p {
+    color: #777;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.welcome-todos__check {
+    background-image: url("../images/icon-check-green.svg");
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e4f6e0;
+    border: 2px solid #2e8d11;
+    border-radius: 36px;
+    float: left;
+    height: 36px;
+    width: 36px;
+    margin-right: 15px;
+    align-self: center;
+}
+
+.welcome-todos__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-footer {
+    display: flex;
+    width: 600px;
+    margin: 40px auto 40px auto;
+}
+
+.welcome-footer__link {
+    padding: 20px;
+    color: #336699;
+    cursor: pointer;
+    flex: 1;
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    p {
+        color: #777;
+        font-size: 14px;
+        margin: 5px 0 0;
+        line-height: 1.5;
+    }
+}
+
+.welcome-footer__link:hover {
+    background: #f2f2f2;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.welcome-footer__divide {
+    background: #bbb;
+    border: 0;
+    height: 1px;
+    margin: 20px auto;
+    width: 600px;
+}
+
+.welcome-footer__remove-page {
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: underline;
+    color: #336699;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 40px;
+}

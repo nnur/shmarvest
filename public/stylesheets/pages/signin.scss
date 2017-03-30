@@ -1,0 +1,103 @@
+.signin-page {
+    background: #eee;
+    height: 100%;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.signin-page__card {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-clip: padding-box;
+    width: 420px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 30px;
+}
+
+.signin-page__heading {
+    font-family: "ProximaNova", "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.signin-page__caption {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "ProximaNova", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    b { font-weight: 800; }
+}
+
+.signin-page__signin-button {
+    background: linear-gradient(#6db460, #409d2f);
+    background-color: #2da411;
+    border: 1px solid #1e8c0a;
+    color: white;
+    font-family: "ProximaNova", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 18px;
+    padding: 0 15px;
+    border-radius: 4px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.signin-page__signin-button:hover {
+    background: linear-gradient(#56a947, #299216);
+    cursor: pointer;
+}
+
+.signin-page__field {
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    color: #333;
+    font-family: "ProximaNova", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    height: 36px;
+    margin: 0;
+    padding: 0 8px;
+    position: relative;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.signin-page__field:hover {
+    border-color: #a4a4a4;
+}
+
+.signin-page__signin-extras {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.signin-page__remember-me label {
+    font-size: 12px;
+    line-height: 18px;
+    color: #777;
+}
+
+.signin-page__forgot-password {
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #336bab;
+    font-family: "ProximaNova", "Helvetica Neue", Arial, sans-serif;
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
