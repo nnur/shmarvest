@@ -1,0 +1,57 @@
+<link rel='stylesheet' href='css/application.css' >
+<%- include('../partials/inner_site_header'); %>
+<%- include('./sub_nav'); %>
+
+<div class="projects-page__contents">
+    <div class="filter-projects">
+        <button class="button-secondary filter-projects__dropdown-button" id="filter-projects-button">Archived projects (1)</button>
+        <div class="filter-projects__dropdown filter-projects__dropdown--hidden">
+            <ul>
+                <% ["Active Projects (2)", "Budgeted Projects (0)", "Archived Projects (1)"].forEach((option) => {  %>
+                    <li class="filter-projects__filter-option"><%= option %></li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+
+    <table class="overview-table">
+      <tbody>
+          <tr>
+              <th class="overview-table__name-column">Plums</th>
+              <th>Budget</th>
+              <th class="overview-table__spent-column">Spent</th>
+              <th>Remaining</th>
+              <th>Costs</th>
+              <th></th>
+          </tr>
+          <tr class="overview-table__data-row">
+              <td>plums</td>
+              <td></td>
+              <td>plummy</td>
+              <td></td>
+              <td>poaopa</td>
+              <td class="projects-page__actions-wrapper">
+                  <button class="button-secondary projects-page__actions-dropdown">Actions</button>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+
+    <div class="project-tips">
+        <button class="button-secondary project-tips__quit-button"></button>
+        <div class="project-tips__contents">
+            <img height="151" src="https://cache.harvestapp.com/assets/onboarding/tip-projects@2x-5642856b94c3a8ced5a106149c820a37.png" />
+            <div class="project-tips__header">
+                <h2>You’re ready to take command, Captain!</h2>
+                <p class="project-tips__description">
+                    The more time tracked, the more useful this Projects section becomes. Up top you’ll see handy graphs, reports, and everything you’ll need for smooth sailing.
+                </p>
+                <a>Discover more with our Projects tour</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<%- include('../partials/inner_site_footer'); %>

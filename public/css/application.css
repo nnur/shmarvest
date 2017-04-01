@@ -52,6 +52,26 @@ html, body {
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
   font-family: "TradeGothic-Regular"; }
 
+@font-face {
+  font-family: 'TradeGothic-Regular';
+  src: url("../fonts/TradeGothic/tradegothic-regular.eot") format("embedded-opentype"), url("../fonts/TradeGothic/tradegothic-regular.woff2") format("woff2"), url("../fonts/TradeGothic/tradegothic-regular.woff") format("woff"), url("../fonts/TradeGothic/tradegothic-regular.ttf") format("truetype"), url("../fonts/TradeGothic/tradegothic-regular.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'TradeGothic-Bold';
+  src: url("../fonts/TradeGothic/tradegothic-bold.eot") format("embedded-opentype"), url("../fonts/TradeGothic/tradegothic-bold.woff2") format("woff2"), url("../fonts/TradeGothic/tradegothic-bold.woff") format("woff"), url("../fonts/TradeGothic/tradegothic-bold.ttf") format("truetype"), url("../fonts/TradeGothic/tradegothic-bold.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'TradeGothic-italics';
+  src: url("../fonts/TradeGothic/tradegothic-italics.eot") format("embedded-opentype"), url("../fonts/TradeGothic/tradegothic-italics.woff2") format("woff2"), url("../fonts/TradeGothic/tradegothic-italics.woff") format("woff"), url("../fonts/TradeGothic/tradegothic-italics.ttf") format("truetype"), url("../fonts/TradeGothic/tradegothic-italics.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'TradeGothic-medium';
+  src: url("../fonts/TradeGothic/tradegothic-medium.eot") format("embedded-opentype"), url("../fonts/TradeGothic/tradegothic-medium.woff2") format("woff2"), url("../fonts/TradeGothic/tradegothic-medium.woff") format("woff"), url("../fonts/TradeGothic/tradegothic-medium.ttf") format("truetype"), url("../fonts/TradeGothic/tradegothic-medium.svg") format("svg");
+  /* Legacy iOS */ }
+
 .site_header {
   width: 100%;
   background: linear-gradient(#f68a28, #f36c00);
@@ -71,7 +91,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
   width: 180px;
   height: 30px;
   align-self: center;
-  background: url(shmarvest-logo.svg) no-repeat 0 0; }
+  background: url(../images/shmarvest-logo.svg) no-repeat 0 0; }
 
 .site_header-logo:hover {
   cursor: pointer; }
@@ -141,8 +161,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
     background-color: rgba(255, 255, 255, 0.1); }
 
 .inner-nav__item--home {
-  background-image: url("home-icon.svg");
-  background-image: url("home-icon.svg");
+  background-image: url("../images/home-icon.svg");
   width: 16px;
   background-position: center;
   background-repeat: no-repeat; }
@@ -186,8 +205,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
     margin: 0 2.5px; }
 
 .inner-header-options__chevron {
-  background-image: url("icon-dropdown.svg");
-  background-image: url("icon-dropdown.svg");
+  background-image: url("../images/icon-dropdown.svg");
   width: 16px;
   height: 100%;
   background-position: center;
@@ -985,31 +1003,31 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
     z-index: 2; }
 
 .timesheet__day-switcher-button:first-of-type {
-  background: url("icon-arrow-left"), linear-gradient(white, #eee);
+  background: url("../images/icon-arrow-left.svg"), linear-gradient(white, #eee);
   background-position: center;
   background-repeat: no-repeat;
   width: 32px;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px; }
   .timesheet__day-switcher-button:first-of-type:hover {
-    background: url("icon-arrow-left"), linear-gradient(#f8f8f8, #e8e8e8);
+    background: url("../images/icon-arrow-left.svg"), linear-gradient(#f8f8f8, #e8e8e8);
     background-position: center;
     background-repeat: no-repeat; }
 
 .timesheet__day-switcher-button:last-of-type {
-  background: url("icon-arrow-right"), linear-gradient(white, #eee);
+  background: url("../images/icon-arrow-right.svg"), linear-gradient(white, #eee);
   background-position: center;
   background-repeat: no-repeat;
   width: 32px;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px; }
   .timesheet__day-switcher-button:last-of-type:hover {
-    background: url("icon-arrow-right"), linear-gradient(#f8f8f8, #e8e8e8);
+    background: url("../images/icon-arrow-right"), linear-gradient(#f8f8f8, #e8e8e8);
     background-position: center;
     background-repeat: no-repeat; }
 
 .timesheet__calendar {
-  background: url("icon-calendar.svg"), linear-gradient(white, #eee);
+  background: url("../images/icon-calendar.svg"), linear-gradient(white, #eee);
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
@@ -1017,13 +1035,13 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
   box-sizing: border-box;
   margin: 0 5px; }
   .timesheet__calendar:hover {
-    background: url("icon-calendar.svg"), linear-gradient(#f8f8f8, #e8e8e8);
+    background: url("../images/icon-calendar.svg"), linear-gradient(#f8f8f8, #e8e8e8);
     background-position: center;
     background-repeat: no-repeat; }
 
 .timesheet__calendar--selected, .timesheet__calendar:active {
   background: #eaeaea;
-  background-image: url("icon-calendar.svg");
+  background-image: url("../images/icon-calendar.svg");
   background-position: center;
   background-repeat: no-repeat;
   border-color: #bbb !important;
@@ -1034,7 +1052,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
   z-index: 1; }
   .timesheet__calendar--selected:hover, .timesheet__calendar:hover:active {
     background: #eaeaea;
-    background-image: url("icon-calendar.svg");
+    background-image: url("../images/icon-calendar.svg");
     background-position: center;
     background-repeat: no-repeat; }
 
@@ -1143,7 +1161,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
   align-self: center;
   cursor: pointer; }
   .new-time-entry__button:before {
-    background: url("icon-add-white.svg");
+    background: url("../images/icon-add-white.svg");
     content: "";
     background-position: center;
     background-repeat: no-repeat;
@@ -1196,7 +1214,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
   text-decoration: underline; }
 
 .subnav__project-search {
-  background: #fff url("icon-search.svg") 10px 50% no-repeat;
+  background: #fff url("../images/icon-search.svg") 10px 50% no-repeat;
   background-size: 12px;
   font-size: 13px;
   padding-left: 28px;
@@ -1221,7 +1239,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
 
 .filter-projects__dropdown-button:after {
   content: "";
-  background-image: url("icon-dropdown-dark.svg");
+  background-image: url("../images/icon-dropdown-dark.svg");
   background-position: right;
   background-repeat: no-repeat;
   position: relative;
@@ -1310,7 +1328,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
 
 .project-tips__quit-button:after {
   content: "";
-  background-image: url("icon-x.svg");
+  background-image: url("../images/icon-x.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 35%;

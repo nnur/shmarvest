@@ -7,3 +7,7 @@ gulp.task('styles', function() {
         .pipe(sass({ includePaths: SASS_INCLUDE_PATHS }).on('error', sass.logError))
         .pipe(gulp.dest('./public/css'));
 });
+
+gulp.task('default', ['styles'], () => {
+    gulp.watch('./public/stylesheets/**/*.scss', ['styles'])
+});

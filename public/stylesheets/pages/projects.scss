@@ -33,7 +33,7 @@
 }
 
 .subnav__project-search {
-    background: #fff url("icon-search.svg") 10px 50% no-repeat;
+    background: #fff url("../images/icon-search.svg") 10px 50% no-repeat;
     background-size: 12px;
     font-size: 13px;
     padding-left: 28px;
@@ -61,7 +61,7 @@
 
 .filter-projects__dropdown-button:after {
     content: "";
-    background-image: url("icon-dropdown-dark.svg");
+    background-image: url("../images/icon-dropdown-dark.svg");
     background-position: right;
     background-repeat: no-repeat;
     position: relative;
@@ -161,7 +161,7 @@
 
 .project-tips__quit-button:after {
     content: "";
-    background-image: url("icon-x.svg");
+    background-image: url("../images/icon-x.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 35%;

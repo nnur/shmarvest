@@ -1,0 +1,49 @@
+<link rel='stylesheet' href='css/application.css' >
+<%- include('../partials/inner_site_header'); %>
+<%- include('./sub_nav'); %>
+
+<%- include('./entry_modal'); %>
+
+<div class="timesheet">
+    <div class="new-time-entry">
+        <button class="new-time-entry__button" id="new-entry-button"></button>
+        <div class="calendar-popover"></div>
+        <span class="new-time-entry__desc">New Entry</span>
+    </div>
+    <div class="timesheet__content">
+        <div class="timesheet__header">
+            <div class="timesheet__header-date">
+            <h2> Monday <span>26 Dec</span> </h2>
+            </div>
+            <div class="timesheet__controls">
+                <div class="timesheet__day-switcher">
+                    <button class="timesheet__day-switcher-button"></button>
+                    <button class="timesheet__day-switcher-button">Today</button>
+                    <button class="timesheet__day-switcher-button"></button>
+                </div>
+                <div class="timesheet__calendar" id="calendar-popup-button"></div>
+                <div class="timesheet__mode-switcher">
+                    <button>Day</button>
+                    <button>Week</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="timesheet-viewer">
+            <ul class="timesheet-viewer__days-list">
+                <% ['M', 'T', 'W', 'Th', 'F', 'S', 'Su'].forEach(function (day) { %>
+                    <button class="timesheet-viewer__button">
+                        <h4><%= day %></h4>
+                        <span>0:00</span>
+                    </button>
+                <% }); %>
+                <button class="timesheet-viewer__button">Total: 0:00</button>
+            </ul>
+        </div>
+
+        <a class="timesheet__convert-link">Copy over all rows from most recent timesheet</a>
+
+    </div>
+</div>
+
+<%- include('../partials/inner_site_footer'); %>

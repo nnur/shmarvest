@@ -18,7 +18,7 @@
   width: 180px;
   height: 30px;
   align-self: center;
-  background: url(shmarvest-logo.svg) no-repeat 0 0;
+  background: url(../images/shmarvest-logo.svg) no-repeat 0 0;
 }
 
 .site_header-logo:hover{
@@ -98,7 +98,7 @@
 }
 
 .inner-nav__item--home {
-    @include background-image(url("home-icon.svg"));
+    background-image: url("../images/home-icon.svg");
     width: 16px;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@
 }
 
 .inner-header-options__chevron {
-    @include background-image(url("icon-dropdown.svg"));
+    background-image: url("../images/icon-dropdown.svg");
     width: 16px;
     height: 100%;
     background-position: center;

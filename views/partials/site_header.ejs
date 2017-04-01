@@ -1,0 +1,24 @@
+<link rel='stylesheet' href='css/application.css' >
+<% if (user_signed_in) { %>
+  <header class="site_header">
+    <div class="site_header-content">
+     <a>Sign Out</a>
+    </div>
+  </header>
+<% } else { %>
+  <header class="site_header">
+    <div class="site_header-content">
+      <div class="site_header-logo"></div>
+      <nav class="site_header-nav">
+        <ul class="site_header-navItems">
+          <a class="site_header-navItem" href="https://www.google.com"><div> Tour </div></a>
+          <a class="site_header-navItem"><div> Pricing </div></a>
+          <a class="site_header-navItem"><div> Customers </div></a>
+          <a class="site_header-navItem"><div> Blog </div></a>
+          <a class="site_header-navItem" href="/login"><div> Sign In </div></a>
+        </ul>
+        <a class="site_header-tryItButton" href="/signup"><div> Try Shmarvest Free </div></a>
+      </nav>
+    </div>
+  </header>
+<% } %>

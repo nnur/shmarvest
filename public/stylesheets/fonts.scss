@@ -1,19 +1,36 @@
-// @include font-face("TradeGothic-Regular", 
-//         "TradeGothic/tradegothic-regular",
-//         $file-formats: eot woff2 woff ttf svg
-// );
+@font-face {
+  font-family: 'TradeGothic-Regular'; 
+  src: url('../fonts/TradeGothic/tradegothic-regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/TradeGothic/tradegothic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/TradeGothic/tradegothic-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/TradeGothic/tradegothic-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/TradeGothic/tradegothic-regular.svg') format('svg'); /* Legacy iOS */
+}
 
-// @include font-face("TradeGothic-Bold", 
-//         "TradeGothic/tradegothic-bold",
-//         $file-formats: eot woff2 woff ttf svg
-// );
+@font-face {
+  font-family: 'TradeGothic-Bold'; 
+  src: url('../fonts/TradeGothic/tradegothic-bold.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/TradeGothic/tradegothic-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/TradeGothic/tradegothic-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/TradeGothic/tradegothic-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/TradeGothic/tradegothic-bold.svg') format('svg'); /* Legacy iOS */
+}
 
-// @include font-face("TradeGothic-italics", 
-//         "TradeGothic/tradegothic-italics",
-//         $file-formats: eot woff2 woff ttf svg
-// );
+@font-face {
+  font-family: 'TradeGothic-italics'; 
+  src: url('../fonts/TradeGothic/tradegothic-italics.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/TradeGothic/tradegothic-italics.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/TradeGothic/tradegothic-italics.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/TradeGothic/tradegothic-italics.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/TradeGothic/tradegothic-italics.svg') format('svg'); /* Legacy iOS */
+}
 
-// @include font-face("TradeGothic-medium", 
-//         "TradeGothic/tradegothic-medium",
-//         $file-formats: eot woff2 woff ttf svg
-// );
+
+@font-face {
+  font-family: 'TradeGothic-medium'; 
+  src: url('../fonts/TradeGothic/tradegothic-medium.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/TradeGothic/tradegothic-medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/TradeGothic/tradegothic-medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/TradeGothic/tradegothic-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/TradeGothic/tradegothic-medium.svg') format('svg'); /* Legacy iOS */
+}
