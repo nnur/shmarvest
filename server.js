@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
 const ejs = require('ejs');
-const helpers = require('express-helpers');
+const ejsHelpers = require('express-helpers');
+const appHelpers = require('./helpers');
 
-helpers(app)
+app.locals.appHelpers = appHelpers;
+
+ejsHelpers(app)
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
@@ -22,14 +25,17 @@ app.get('/login', function (req, res) {
 });
 
 app.get('/welcome', function (req, res) {
+  app.locals.url = req.url;
   res.render('welcome', {name: 'shaquep'})
 });
 
 app.get('/time', function (req, res) {
+  app.locals.url = req.url;
   res.render('time' , {user_signed_in: false})
 });
 
 app.get('/projects', function (req, res) {
+  app.locals.url = req.url;
   res.render('projects');
 });
 

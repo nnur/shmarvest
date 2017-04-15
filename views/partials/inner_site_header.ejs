@@ -1,13 +1,13 @@
 <header class="site_header site_header-inner">
     <div class="site_header-content">
         <ul class="inner-nav">
-            <a href='/welcome' class="inner-nav__item inner-nav__item--home"></a>
-            <a href='/time' class="inner-nav__item">Timesheets</a>
-            <a href='/projects' class="inner-nav__item">Projects</a>
-            <a href='/team' class="inner-nav__item">Team</a>
-            <a href='/reports' class="inner-nav__item">Reports</a>
-            <a href='/invoices' class="inner-nav__item">Invoices</a>
-            <a href='/manage' class="inner-nav__item">Manage</a>
+            <%- link_to(" ", '/welcome', {class:"inner-nav__item inner-nav__item--home" + appHelpers.selectLink('/welcome', url)}) %>
+            <%- link_to('Timesheets', '/time', {class:"inner-nav__item" + appHelpers.selectLink('/time', url)}) %>
+            <%- link_to('Projects', '/projects', {class:"inner-nav__item" + appHelpers.selectLink('/projects', url)}) %>
+            <%- link_to('Team', '/team', {class:"inner-nav__item" + appHelpers.selectLink('/team', url)}) %>
+            <%- link_to('Reports', '/reports', {class:"inner-nav__item" + appHelpers.selectLink('/team', url)}) %>
+            <%- link_to('Invoices', '/invoices', {class:"inner-nav__item" + appHelpers.selectLink('/invoices', url)}) %>
+            <%- link_to('Manage', '/manage', {class:"inner-nav__item" + appHelpers.selectLink('/manage', url)}) %>
         </ul>
         <ul class="inner-header-options">
             <li class="inner-header-options__item">Help</li>
