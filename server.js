@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 const ejs = require('ejs');
 const ejsHelpers = require('express-helpers');
-const appHelpers = require('./helpers');
+const customHelpers = require('./helpers');
 
-app.locals.appHelpers = appHelpers;
 
+customHelpers(app);
 ejsHelpers(app)
 app.set('view engine', 'ejs');
 app.use(express.static('public'));

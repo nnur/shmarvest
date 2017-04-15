@@ -1,13 +1,13 @@
 <header class="site_header site_header-inner">
     <div class="site_header-content">
         <ul class="inner-nav">
-            <%- link_to(" ", '/welcome', {class:"inner-nav__item inner-nav__item--home" + appHelpers.selectLink('/welcome', url)}) %>
-            <%- link_to('Timesheets', '/time', {class:"inner-nav__item" + appHelpers.selectLink('/time', url)}) %>
-            <%- link_to('Projects', '/projects', {class:"inner-nav__item" + appHelpers.selectLink('/projects', url)}) %>
-            <%- link_to('Team', '/team', {class:"inner-nav__item" + appHelpers.selectLink('/team', url)}) %>
-            <%- link_to('Reports', '/reports', {class:"inner-nav__item" + appHelpers.selectLink('/team', url)}) %>
-            <%- link_to('Invoices', '/invoices', {class:"inner-nav__item" + appHelpers.selectLink('/invoices', url)}) %>
-            <%- link_to('Manage', '/manage', {class:"inner-nav__item" + appHelpers.selectLink('/manage', url)}) %>
+            <%- link_to(" ", '/welcome', {class:"inner-nav__item inner-nav__item--home" + selectLink('/welcome', url)}) %>
+            <%- link_to('Timesheets', '/time', {class:"inner-nav__item" + selectLink('/time', url)}) %>
+            <%- link_to('Projects', '/projects', {class:"inner-nav__item" + selectLink('/projects', url)}) %>
+            <%- link_to('Team', '/team', {class:"inner-nav__item" + selectLink('/team', url)}) %>
+            <%- link_to('Reports', '/reports', {class:"inner-nav__item" + selectLink('/team', url)}) %>
+            <%- link_to('Invoices', '/invoices', {class:"inner-nav__item" + selectLink('/invoices', url)}) %>
+            <%- link_to('Manage', '/manage', {class:"inner-nav__item" + selectLink('/manage', url)}) %>
         </ul>
         <ul class="inner-header-options">
             <li class="inner-header-options__item">Help</li>

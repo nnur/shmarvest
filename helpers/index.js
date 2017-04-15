@@ -1,1 +1,3 @@
-exports.selectLink = require('./selectLinkHelper');
+module.exports = (app) => {
+  app.locals.selectLink = require('./selectLinkHelper');
+};
