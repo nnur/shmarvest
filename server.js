@@ -1,8 +1,17 @@
 const express = require('express');
 const app = express();
+const dotenv = require('dotenv');
+dotenv.load();
+
 const ejs = require('ejs');
 const ejsHelpers = require('express-helpers');
 const customHelpers = require('./helpers');
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+const MongoClient = require('mongodb').MongoClient
+const mongoose = require('mongoose');
+const mognoUrl = `mongodb://${process.env.DBUSER}:${process.env.DBPWD}@ds161580.mlab.com:61580/shmarvest`;
+mongoose.connect(mognoUrl);
 
 
 customHelpers(app);
@@ -38,6 +47,9 @@ app.get('/projects', function (req, res) {
   app.locals.url = req.url;
   res.render('projects');
 });
+
+app.post('/login', passport.authenticate('local', { successRedirect: '/welcome',
+                                                    failureRedirect: '/login' }));
 
 app.listen(PORT, () => {
     console.log(`listening http://localhost:${PORT}`);
