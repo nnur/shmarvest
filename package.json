@@ -10,6 +10,7 @@
   "author": "noodleynoo <23naila.n@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "bourbon": "^4.3.3",
     "dotenv": "^4.0.0",
     "ejs": "2.5.6",

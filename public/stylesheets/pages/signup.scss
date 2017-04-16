@@ -117,13 +117,27 @@
     width: 72%;
 }
 
-.signup_page-form .field .field_with_errors input {
+.signup_page-form .field .field-input-wrapper {
     float: right;
+    width: 335px;
+    float: right;
+    position: relative;
+}
+
+.signup_page-form .field .field-input-wrapper input {
     width: 100%;
+}
+
+.signup_page-form .field .field-input-wrapper.fieldWithError input {
     border: 1px solid #d20a0a;
 }
 
-.signup_page-form .field .field_with_errors .message {
+.signup_page-form .field .field-input-wrapper label.message {
+    display: none;
+}
+
+.signup_page-form .field .field-input-wrapper.fieldWithError label.message {
+    display: block;
     background: #d20a0a;;
     border-radius: 3px;
     font-size: 12px;
@@ -139,6 +153,12 @@
     height: 22px;
     box-sizing: border-box;
     top: (40 - (22/2) + (5/2)) * -1px;
+}
+
+.signup_page-form .field .field_with_errors input {
+    float: right;
+    width: 100%;
+    border: 1px solid #d20a0a;
 }
 
 .field .signup_page-webAddressField {

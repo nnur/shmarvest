@@ -12,49 +12,51 @@
     </h3>
 
     <div class="signup_page-form">
-        <form id="signup-form" class="signup_page-formContent">
+        <form id="signup-form" class="signup_page-formContent" action="/signup" method="post">
 
           <div class="field">
-            <label>First Name</label>
-            <input type="text" value="first name" >
-          </div>
-
-          <div class="field">
-            <label>Last Name</label>
-            <input type="text">
+            <label>Name</label>
+            <div class="field-input-wrapper">
+              <input type="text" name="name" placeholder="Full name">
+              <label for="user_email" class="message">can't be blank</label>
+            </div>
           </div>
 
           <div class="field">
             <label>Company Name</label>
-            <input type="text">
+            <div class="field-input-wrapper">
+              <input type="text" name="companyName" class="required-input">
+              <label for="user_email" class="message">can't be blank</label>
+            </div>
           </div>
 
           <div class="field">
             <label>Email</label>
-            <input type="text">
-          </div>
-
-          <div class="field">
-            <label>Contact Phone</label>
-            <input type="text">
+            <div class="field-input-wrapper">
+              <input type="email" name="email" class="required-input">
+              <label for="user_email" class="message">can't be blank</label>
+            </div>
           </div>
 
           <div class="field">
             <label>Password</label>
-            <input type="text">
+            <div class="field-input-wrapper">
+              <input type="password" name="password" class="required-input">
+              <label for="user_email" class="message">can't be blank</label>
+            </div>
           </div>
 
           <div class="field">
             <label>Web Address</label>
-            <div class="signup_page-webAddressField">
-              <input type="text">
+            <div class="field-input-wrapper signup_page-webAddressField">
+              <input type="text" name="webAddress" class="required-input">
               <span>.shmarvest.com</span>
             </div>
           </div>
 
           <div class="field">
             <label>Team Size</label>
-            <select form="signup-form">
+            <select form="signup-form" name="teamSize">
               <option value="1">1</option>
               <option value="2-4">2-4</option>
               <option value="5-9">5-9</option>
@@ -83,3 +85,5 @@
     </div>
   </div>
 </div>
+
+<script src="./javascripts/validations.js"></script>
